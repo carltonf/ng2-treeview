@@ -1,0 +1,7 @@
+<node-name [name]="tree.name"></node-name>
+
+<div class="sub-forest">
+  <tree-view *ngFor="#childTree of tree.children"
+             [tree]="childTree">
+  </tree-view>
+</div>

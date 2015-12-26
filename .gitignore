@@ -6,7 +6,8 @@ npm-debug.log*
 
 # Project Specific
 # coding in TS
-app/**/*.js
+src/**/*.js
+index.js
 
 # vendor modules
 node_modules/
