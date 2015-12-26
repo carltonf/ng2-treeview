@@ -1,0 +1,30 @@
+# Generated
+bundle/
+dist/
+npm-debug.log*
+*.map
+
+# Project Specific
+# coding in TS
+app/**/*.js
+
+# vendor modules
+node_modules/
+bower_components/
+
+# Vim
+[._]*.s[a-w][a-z]
+[._]s[a-w][a-z]
+*.un~
+*~
+
+# Emacs
+*~
+\#*\#
+npm-debug.log
+
+# Webstorm
+.idea/
+
+# Visual Studio Code
+# is included

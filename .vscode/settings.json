@@ -1,0 +1,18 @@
+// Place your settings in this file to overwrite default and user settings.
+{
+  "editor.lineNumbers": false,
+  "editor.insertSpaces": true,
+  "diffEditor.renderSideBySide": false,
+  "editor.wrappingColumn": 80,
+  "diffEditor.ignoreTrimWhitespace": false,
+  "files.trimTrailingWhitespace": true,
+  "editor.tabSize": 2,
+
+  // Project wide setting
+  "files.exclude": {
+    "**/.git": true,
+    "**/.DS_Store": true,
+    "app/**/*js": true,
+    "app/**/*map": true,
+  }
+}
