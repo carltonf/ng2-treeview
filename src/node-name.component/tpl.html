@@ -1,3 +1,9 @@
 <!-- todo only a stub, add other controls later -->
 
-<span class="name">{{name}}</span>
+<span #nameBox class="name"
+      [class.dragging]="isDragging"
+      draggable="true"
+      (dragstart)="ondragstart($event, nameBox)"
+      (dragend)="ondragend()">
+  {{name}}
+</span>
