@@ -1,7 +1,8 @@
-import { Component } from 'angular2/core';
+import { Component, ViewEncapsulation } from 'angular2/core';
 import { NgSwitch, NgSwitchDefault, NgSwitchWhen } from 'angular2/common';
 
 @Component({
+  encapsulation: ViewEncapsulation.Native,
   selector: 'node-name',
   moduleId: module.id,
   templateUrl: 'tpl.html',
@@ -10,6 +11,7 @@ import { NgSwitch, NgSwitchDefault, NgSwitchWhen } from 'angular2/common';
 })
 export class NodeNameComponent {
   public name: string;
+  // todo considerring factoring these drag behaviors out into a directive
   isDragging: boolean = false;
   isDraggingOver: boolean = false;
 
@@ -42,6 +44,6 @@ export class NodeNameComponent {
 
     this.isDraggingOver = false;
     // todo really do something
-    console.log('Drop a child at ' + box);
+    console.log('Drop a child at ' + box.localName);
   }
 }

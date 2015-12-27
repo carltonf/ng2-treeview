@@ -1,0 +1,21 @@
+
+<!-- <node-control [fold]="isFolded"></node-control> -->
+<div class="tree-node"
+     (treeDragstart)="ondragstart($event.target)">
+
+      <!--(dragover)="ondragover($event)"-->
+      <!--(dragenter)="ondragenter()"-->
+      <!--(dragleave)="ondragleave()"-->
+      <!--(drop)="ondrop($event, nameBox)" -->
+  <node-entry [name]="treeData.name"
+              [(foldStatus)]="foldStatus">
+  </node-entry>
+
+  <div class="forest" *ngIf="foldStatus === 'expanded'">
+    <tree-node *ngFor="#childData of treeData.children"
+               [treeData]="childData"
+               [parentTreeData]="treeData">
+    </tree-node>
+  </div>
+
+</div>

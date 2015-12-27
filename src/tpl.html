@@ -1,20 +1,5 @@
-<!--<node-entry></node-entry>-->
-<!-- <node-control [fold]="isFolded"></node-control> -->
-<div class='entry'>
-  <span class="entry-toggle"
-        [ngSwitch]="foldStatus" (click)="onFoldToggle()">
-    <span *ngSwitchWhen="'expanded'">-</span>
-    <span *ngSwitchWhen="'folded'">+</span>
-    <span *ngSwitchWhen="'noChildren'">&nbsp;</span>
-    <span *ngSwitchDefault>*</span>
-  </span>
-
-  <node-name [name]="treeData.name">
-    </node-name>
-</div>
-
-<div class="forest" *ngIf="foldStatus === 'expanded'">
-  <tree-view *ngFor="#childData of treeData.children"
-             [treeData]="childData">
-  </tree-view>
+<div class="tree-view">
+  <!-- The root of the tree -->
+  <tree-node [treeData]="treeData" [parentTreeData]="null">
+  </tree-node>
 </div>

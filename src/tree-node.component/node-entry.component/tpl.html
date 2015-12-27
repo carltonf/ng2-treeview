@@ -1,0 +1,12 @@
+<div class='node-entry'>
+  <span class="entry-toggle"
+        [ngSwitch]="foldStatus"
+        (click)="onFoldToggle()">
+    <span *ngSwitchWhen="'expanded'">-</span>
+    <span *ngSwitchWhen="'folded'">+</span>
+    <span *ngSwitchWhen="'noChildren'">&nbsp;</span>
+    <span *ngSwitchDefault>*</span>
+  </span>
+
+  <node-name [name]="name"></node-name>
+</div>
