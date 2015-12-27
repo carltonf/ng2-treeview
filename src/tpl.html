@@ -1,7 +1,8 @@
 <!--<node-entry></node-entry>-->
 <!-- <node-control [fold]="isFolded"></node-control> -->
 <div class='entry'>
-  <span [ngSwitch]="foldStatus" (click)="onFoldToggle()">
+  <span class="entry-toggle"
+        [ngSwitch]="foldStatus" (click)="onFoldToggle()">
     <span *ngSwitchWhen="'expanded'">-</span>
     <span *ngSwitchWhen="'folded'">+</span>
     <span *ngSwitchWhen="'noChildren'">&nbsp;</span>

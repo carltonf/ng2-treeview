@@ -5,6 +5,7 @@ import { NgSwitch, NgSwitchDefault, NgSwitchWhen } from 'angular2/common';
     selector: 'node-name',
     moduleId: module.id,
     templateUrl: 'tpl.html',
+    styleUrls: ['style.css'],
     inputs: ['name'],
 })
 export class NodeNameComponent {

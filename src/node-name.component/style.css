@@ -1,0 +1,4 @@
+.name:hover {
+  outline: solid thin orange;
+  cursor: default;
+}
