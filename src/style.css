@@ -6,6 +6,8 @@
   /* have to be monospace fonts if we want +/- control btns the same size */
   font-family: Courier New, Courier, monospace;
   cursor: pointer;
+  /* avoid nasty text property quirks */
+  display: inline-block;
 }
 
 .entry-toggle:hover {

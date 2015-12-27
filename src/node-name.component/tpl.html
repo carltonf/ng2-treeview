@@ -2,8 +2,13 @@
 
 <span #nameBox class="name"
       [class.dragging]="isDragging"
+      [class.dragging-over]='isDraggingOver'
       draggable="true"
       (dragstart)="ondragstart($event, nameBox)"
-      (dragend)="ondragend()">
+      (dragend)="ondragend()"
+      (dragover)="ondragover($event)"
+      (dragenter)="ondragenter()"
+      (dragleave)="ondragleave()"
+      (drop)="ondrop($event, nameBox)">
   {{name}}
 </span>
