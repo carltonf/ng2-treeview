@@ -1,2 +1,2 @@
 export * from './src/index';
-export * from './src/tree-node';
+export * from './src/tree-data';

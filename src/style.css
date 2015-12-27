@@ -1,3 +1,7 @@
-div.sub-forest {
+.entry {
+  /* have to be monospace fonts if we want +/- control btns the same size */
+  font-family: Courier New, Courier, monospace;
+}
+div.forest {
   margin-left: 1em;
 }

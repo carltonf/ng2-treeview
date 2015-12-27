@@ -1,4 +1,5 @@
-import {Component} from 'angular2/core';
+import { Component } from 'angular2/core';
+import { NgSwitch, NgSwitchDefault, NgSwitchWhen } from 'angular2/common';
 
 @Component({
     selector: 'node-name',
